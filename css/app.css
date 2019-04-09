@@ -2,5 +2,5 @@ body {
   background-image: url("../img/everest.jpg");
   background-color: #cccccc;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 500%;
 }
