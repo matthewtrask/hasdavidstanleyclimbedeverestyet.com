@@ -11,9 +11,29 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<h1 class="text-center mt-4 text-white">Has David Stanley Climbed Everest Yet?</h1>
-				<h1 class="text-center mt-4 text-white">Nope!</h1>
+				<h1 class="text-center mt-4 text-white" id="nope"></h1>
 			</div>
 		</div>
-    </div>
+	</div>
+	<script type="text/javascript">
+		var waysToSayNo = [
+			'No',
+			'Nope',
+			'Not Yet',
+			'It\'s Too Cold',
+			'He is too old',
+			'Nein',
+			'Nyet',
+			'Negative Ghost Rider',
+		];
+
+		Array.prototype.randomElement = function () {
+    	return this[Math.floor(Math.random() * this.length)]
+		}	
+		
+		var no = waysToSayNo.randomElement()
+
+		document.getElementById('nope').innerHTML = no;
+	</script>
 </body>
 </html>
